@@ -22,15 +22,16 @@ a {
 button {
     padding: 10px 15px;
     border-radius: 8px;
+    border: 0;
     font-weight: bold;
-    background: #1d61dd;
+    background: transparent;
     color: white;
     font-family: 'Montserrat', sans-serif;
 }
 
 header {
     background: no-repeat center/cover url('assets/4ae2d169-5881-4aca-92a8-e8700c5c6db2-istock-1060514208-1.jpg');
-    height: calc(100vh - 2px);
+    height: calc(100vh - 150px);
 }
 
 header nav{
@@ -39,5 +40,25 @@ header nav{
     margin: auto 90px;
 }
 
+header nav p {
+    font-weight: bold;
+}
 
+header nav ul {
+    display: flex;
+}
 
+header nav ul li{
+    margin: 0 15px;
+}
+
+.header-content {
+    max-width: 400px;
+    margin: 150px auto;
+    text-align: center;
+}
+
+.header-content h1 {
+    margin-bottom: 10px;
+    font-size: 4rem;
+}
