@@ -62,3 +62,40 @@ header nav ul li{
     margin-bottom: 10px;
     font-size: 4rem;
 }
+
+.pacotes {
+    background: #70ef96;
+    padding: 15px;
+
+}
+
+.pacotes .pacotes-cards {
+    display: flex;
+    margin: auto;
+    max-width: 950px;
+    flex-wrap: wrap;
+    justify-content: center;
+
+}
+.pacotes .card {
+    width: 250px;
+    height: 200px;
+    background: white;
+    border-radius: 25px 0;
+    margin: 25px;
+    position: relative;
+}
+.pacotes .card-image {
+    width: 250px;
+    height: 200px;
+    border-radius: 24px 0;
+    object-fit: cover;
+    
+}
+
+.pacotes .pacotes-title {
+    width: 100%;
+    text-align: center;
+    margin: 25px 0;
+}
+
