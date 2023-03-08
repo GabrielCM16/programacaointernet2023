@@ -22,7 +22,6 @@ a {
 button {
     padding: 10px 15px;
     border-radius: 8px;
-    border: 0;
     font-weight: bold;
     background: transparent;
     color: white;
@@ -97,5 +96,30 @@ header nav ul li{
     width: 100%;
     text-align: center;
     margin: 25px 0;
+}
+
+.pacotes .card-content {
+    padding: 0 15px;
+}
+
+.pacotes .card-content ul{
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+}
+
+.pacotes .card-content ul li{
+    font-size: 0.6rem;
+    display: flex;
+    align-items: center;
+    margin: 3px;
+    color: gray;
+    font-weight: bold;
+}
+
+.pacotes .card-content li svg {
+    width: 16px;
+    height: 16px;
+    margin-right: 10px;
 }
 
