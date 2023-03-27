@@ -1,0 +1,269 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Alkatra:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Alkatra:wght@600&family=Ubuntu&display=swap');
+
+
+* {
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+}
+
+ul {
+    list-style: none;
+    font-weight: bold;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+button {
+    padding: 10px 15px;
+    border-radius: 8px;
+    font-weight: bold;
+    background: transparent;
+    color: black;
+    font-family: 'Montserrat', sans-serif;
+}
+
+header {
+    background: no-repeat center/cover url('https://m.supervasco.com/wallpaper/gerar-imagem/?url=https://media.supervasco.com/wallpapper/2020/08/bandeira-vascaina.png');
+    height: calc(100vh - 150px);
+    font-family: 'Alkatra', cursive;
+    
+}
+
+header nav{
+    display: flex;
+    justify-content: space-between;
+    font-family: 'Alkatra', cursive;
+    margin: auto 90px;
+    color: white;
+    font-size: large;
+  
+}
+
+header nav p {
+    font-weight: bold;
+}
+
+header nav ul {
+    display: flex;
+
+}
+
+header nav ul li{
+    margin: 0 15px;
+}
+
+.header-content {
+    max-width: 400px;
+    margin: 150px auto;
+    text-align: center;
+}
+
+.header-content h1 {
+    margin-bottom: 10px;
+    font-size: 4rem;
+}
+
+.jogadores {
+    background: #c73218;
+    padding: 15px;
+
+}
+
+.jogadores .jogadores-cards {
+    display: flex;
+    margin: auto;
+    max-width: 950px;
+    flex-wrap: wrap;
+    justify-content: center;
+
+}
+.jogadores .card {
+    width: 250px;
+    height: 450px;
+    background: white;
+    border-radius: 25px 0;
+    margin: 25px;
+    position: relative;
+}
+.jogadores .card-image {
+    width: 250px;
+    height: 200px;
+    border-radius: 24px 0;
+    object-fit: cover;
+    
+}
+
+.jogadores .jogadores-title {
+    width: 100%;
+    text-align: center;
+    margin: 25px 0;
+    font-family: 'Alkatra', cursive;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.jogadores .card-content {
+    padding: 0 15px;
+    font-family: 'Alkatra', cursive;
+}
+
+.jogadores .card-content ul{
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+}
+
+.jogadores .card-content ul li{
+    font-size: 1rem;
+    display: flex;
+    align-items: center;
+    margin: 3px;
+    color: gray;
+    font-weight: bold;
+}
+
+.jogadores .card-content li svg {
+    width: 16px;
+    height: 16px;
+    margin-right: 10px;
+}
+
+
+.jogadores .card-content h1{
+    font-size: 1.5rem;
+}
+
+.jogadores .card .card-tag-top{
+    position: absolute;
+    right: 0;
+    top: 15px;
+    background: #f19b39;
+    border-radius: 8px 0 0 8px;
+    padding: 5px 10px;
+}
+
+.jogadores .card .card-tag-bottom{
+    position: absolute;
+    left: 0;
+    top: 160px;
+    background: #1d61dd;
+    border-radius: 0 8px 8px 8;
+    padding: 5px 10px;
+}
+
+.jogadores .card .card-tag p{
+    margin: 0;
+    font-size: 0.8rem;
+    color: white;
+    font-weight: bold;
+}
+
+.historia{
+    padding: 15px
+}
+
+
+.historia .historia-tittle{
+    text-align: center;
+    margin: 35px 0;
+    font-size: 2rem;
+    font-family: 'Alkatra', cursive;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.historia .historia-cards{
+    margin-top: 25px;
+    display: flex;
+    max-width: 950px;
+    justify-content: center;
+    margin: auto;
+    flex-wrap: wrap;
+    
+}
+
+.historia .card{
+    width: 250px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0 20px;
+}
+
+.historia .card svg{
+    width: 60px;
+    height: 60px;
+    margin: 50px;
+    transition: all 1s;
+}
+
+.historia .card svg:hover{
+    stroke: #1d61dd;
+    transform: scale(1.1);
+}
+
+.historia .card p{
+    color: gray;
+    font-size: 0.8rem;
+    text-align: center;
+}
+
+.historia .card .card-content{
+    height: 180px;
+    text-align: center;
+    font-size: 1.5rem;
+}
+
+
+.historia .card .card-content p{
+    height: 180px;
+    text-align: center;
+    font-size: 1rem;
+ 
+}
+
+.titulos {
+
+    padding: 60px;
+    background: #e1e8f7;
+    position: relative;
+    text-align: right;
+
+}
+
+.titulos .titulos-card{
+    
+    width: 600px;
+    height: 300px;
+    background: white;
+    position: absolute;
+    z-index: 99;
+    border-radius: 8px;
+    top: calc(50% - 170px);
+    left: calc(20% - 175px);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.titulos .titulos-card h1{
+    padding-left: 50px;
+    text-align: left;
+}
+
+.titulos .titulos-card li {
+    font-size: 1rem;
+    font-weight: bold;
+    color: grey;
+    display: flex;
+    align-items: center;
+
+}
