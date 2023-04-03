@@ -239,3 +239,14 @@ header nav ul li{
     align-items: center;
 
 }
+
+#map {
+    height: 400px;
+    width: 100%;
+}
+
+.contato .contato-card li svg {
+    width: 16px;
+    margin: 10px;
+}
+
