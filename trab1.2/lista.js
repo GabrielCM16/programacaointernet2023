@@ -22,7 +22,7 @@ function fillList(list = nameList) {
         let listItems = document.createElement("li");
 
         if (num_seleciona == i){
-            listItems.className = "alert alert-warning";
+            listItems.className = "alert alert-link";
         } else{
             listItems.className = "";
         }
@@ -32,7 +32,7 @@ function fillList(list = nameList) {
 }
 
 function inputHandler() {
-    saida.innerHTML = ""
+  
     const filteredList = nameList.filter(el => {
         const listItems = el.toLowerCase();
         const searchWord = searchField.value.toLowerCase();
@@ -54,55 +54,41 @@ function adicionarNome(){
         } else {
             saida.innerHTML = "nome ja adicionado anteriormente"
         }
-    
     } else {
         saida.innerHTML = "Insira um nome valido"
     }
-
 }
 
 botaoadd.addEventListener("click", adicionarNome);
 
 
 function removerNome(){
-    num_seleciona = 0;
-    nome = searchField.value.toLowerCase();
+    
+    nome = nameList[num_seleciona ];
 
-    var index = nameList.indexOf(nome);
-    if (index > -1) {
-        nameList.splice(index, 1);
-        saida.innerHTML = "Nome removido: " + nome;
-      } else {
-        saida.innerHTML = 'Não foi possivel localizar o elemento "' + nome + '"'
-      }
+    nameList.splice(num_seleciona , 1);
+    saida.innerHTML = "Nome removido: " + nome;
+
+    inputHandler();
     
 }
-
 botaorel.addEventListener("click", removerNome);
-
     
 function seleciona(){
+    saida.innerHTML = ""
 
     var aux = nameList[num_seleciona]
 
     if (nameList.length == num_seleciona){
         num_seleciona = 0;
     } else{
-
     num_seleciona += 1;
-
     }
 
     console.log(num_seleciona);
 
-
     inputHandler();
-
-
-
 
 }
 
 botaosel.addEventListener("click", seleciona)
-
-
