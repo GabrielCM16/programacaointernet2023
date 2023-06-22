@@ -1,0 +1,13 @@
+body{
+    background: #3f90b1;
+    display: flex;
+    align-items: center;
+    height: 100vh;
+    font-family: sans-serif;
+}
+
+.container {
+    width: auto;
+    margin: auto;
+    align-items: center;
+}
