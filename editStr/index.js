@@ -1,6 +1,6 @@
 // criar referencias aos elementos da pag
 const frm = document.querySelector("form");
-const resp = document.querySelector("pre");
+const resp = document.querySelector("h3");
 
 frm.addEventListener("submit", (e) => {
     //evita o envio do formulario
@@ -12,12 +12,16 @@ frm.addEventListener("submit", (e) => {
     const item = String(frm.inItem.value);
     const nums = String(frm.inPos.value);
     
-    
+    var aux = nums.split(","); //separa os numeros por ,
+    var posicoes = []
+    for (let i = 0; i < aux.length; i++) {
+        let str = aux[i]
+        let number = parseInt(str)
+        posicoes.push(number);
+    }
 
-
-    console.log(insertString(frase, item, ))
-    console.log(insertString("O lelebas deu uma sugada", "no narebas", [15]))
-    
+    let saida = insertString(frase, item, posicoes);
+    resp.innerHTML = saida;
 
 });
 
@@ -31,8 +35,6 @@ function insertString(str, toInsert, indexes){
             charArray.splice(i + insertCount, 0, toInsert);
             insertCount++;
         }
-        
     }
     return charArray.join("");
-
 }
